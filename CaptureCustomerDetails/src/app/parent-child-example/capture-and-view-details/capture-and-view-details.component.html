@@ -1,0 +1,6 @@
+<div class="title">Capture Customer Details</div>
+<div class="grid-container">
+    <div class="grid-item"><app-capture-details #captureDetails
+            (userDetailsEmitter)="onUserDetailsEmitted($event)"></app-capture-details></div>
+    <div class="grid-item"><app-view-details></app-view-details></div>
+</div>

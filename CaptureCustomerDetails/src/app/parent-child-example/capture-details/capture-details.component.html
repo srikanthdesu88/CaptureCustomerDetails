@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-header>Enter Customer Details</mat-card-header>
+    <mat-card-content>
+        <form class="form-container" [formGroup]="userDetailsForm" (ngSubmit)="onSubmit()">
+            <mat-form-field class="form-item">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="First Name" formControlName="firstName">
+            </mat-form-field>
+
+            <mat-form-field class="form-item">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Last Name" formControlName="lastName">
+            </mat-form-field>
+
+            <button type="submit" class="form-item" mat-raised-button color="primary">Add</button>
+        </form>
+    </mat-card-content>
+</mat-card>
